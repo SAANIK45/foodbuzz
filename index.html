@@ -7,10 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="manifest" href="site.webmanifest">
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-        <!-- Place favicon.ico in the root directory -->
-
 		<!-- CSS here -->
         <link rel="stylesheet" href="./style.css">
       
@@ -18,19 +15,19 @@
     <body>
 
         <!-- site or application content here -->
+
         <section class="header">
             <div class="main-header">
                 <div class="logo">
-                    <img src="./img/logo.png" alt="logo">
+                    <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">recipies</a></li>
-                        <li><a href="#">stuff</a></li>
-                        <li><a href="#">popular</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#recipies">recipies</a></li>
+                        <li><a href="#stuff">stuff</a></li>
+                        <li><a href="#contact">contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -51,7 +48,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="main-about">
                 <div class="left-about">
                     <img src="./img/about/about.png" alt="">
@@ -64,9 +61,9 @@
             </div>
         </section>
 
-        <section class="recipies">
+        <section class="recipies" id="recipies">
             <div class="section-title">
-                <h2>My <span>recipies</span></h2>
+                <h2>Our <span>recipies</span></h2>
                 <p>Set of instructions for preparing a particular dish, including a list of the ingredients required. A recipe has 3 parts: Title, Ingredients & Steps. We'll take you through.</p>
             </div>
             <div class="main-recipies">
@@ -108,7 +105,7 @@
             </div>
         </section>
 
-        <section class="stuff">
+        <section class="stuff" id="stuff">
             <div class="section-title">
                 <h2>Our <span>Stuff</span></h2>
                 <p>Set of instructions for preparing a particular dish, including a list of the ingredients required. A recipe has 3 parts: Title, Ingredients & Steps. We'll take you through.</p>
@@ -130,6 +127,30 @@
                     <p>8 year experience</p>
                 </div>
             </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="section-title">
+                <h2>Contact <span>us</span></h2>
+            </div>
+            <div class="contact-from">
+                <form class="form" action="#">
+                    <input type="text" placeholder=" Your name">
+                    <input type="email" placeholder=" Your email">
+                    <textarea name="comment" form="usrform" placeholder="your massage"></textarea>
+                    <button class="submit-btn hero-btn">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="footer">
+            <footer>
+                <div class="footer-content">
+                    <h1>food<span>buzz</span></h1>
+                    <p>Eat healthy to live healthy. Live healthy to live happy</p>
+                    <h5>designed by <span> Md. Samiul Ahmed</span></h5>
+                </div>
+            </footer>
         </section>
     </body>
 </html>

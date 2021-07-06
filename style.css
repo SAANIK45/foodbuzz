@@ -1,18 +1,44 @@
 /*
-  Theme Name: Name - Multipurpose HTML Template
-  Author: mdsalim400@gmail.com
-  Support: admin@gmail.com
+  Template name : foodbuzz
+  Author: Md. Samiul Ahmed
+  Support: samiulahmedanik@gmail.com
 */
-
-
 
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	font-family: 'Montserrat', sans-serif;
 	margin: 0;
 	padding: 0;
+}
+
+/* reusable */
+.section-title {
+	text-align: center;
+	width: 500px;
+	margin: auto;
+}
+
+.section-title h2 {
+	font-size: 36px;
+	text-transform: capitalize;
+	color: #575757;
+	font-weight: 700;
+}
+
+.section-title h2 span {
+	color: #FC8F49;
+}
+
+.section-title p {
+	font-size: 18px;
+	color: #252525;
+	line-height: 2;
 }
 
 /* header */
@@ -38,14 +64,17 @@ body {
 	background: #FC8F49;
 }
 
-ul {}
-
 .menu ul li a {
 	text-decoration: none;
 	color: #FFF;
 	font-size: 18px;
 	font-weight: 600;
 	text-transform: capitalize;
+	transition: .3s;
+}
+
+.menu ul li a:hover {
+	color: #575757;
 }
 
 .logo img {
@@ -59,7 +88,6 @@ ul {}
 }
 
 /* hero-area */
-
 .main-hero {
 	display: flex;
 	margin-top: 80px;
@@ -111,6 +139,13 @@ ul {}
 	font-weight: 600;
 	letter-spacing: 2px;
 	font-family: 'Montserrat', sans-serif;
+	box-shadow: 0px 0px 15px 0px #fd8f40;
+	transition: .5s;
+	cursor: pointer;
+}
+
+.hero-btn:hover {
+	background: #575757;
 }
 
 /* about */
@@ -155,30 +190,6 @@ ul {}
 	color: #878787;
 	text-align: justify;
 	margin: 57px 0px;
-	line-height: 2;
-}
-
-
-.section-title {
-	text-align: center;
-	width: 500px;
-	margin: auto;
-}
-
-.section-title h2 {
-	font-size: 36px;
-	text-transform: capitalize;
-	color: #575757;
-	font-weight: 700;
-}
-
-.section-title h2 span {
-	color: #FC8F49;
-}
-
-.section-title p {
-	font-size: 18px;
-	color: #252525;
 	line-height: 2;
 }
 
@@ -286,4 +297,91 @@ ul {}
 .stuff-item p {
 	color: #FC8F49;
 	font-weight: 600;
+}
+
+/* contact */
+.contact {
+	margin-top: 60px;
+}
+
+.submit-btn {
+	margin-top: 20px;
+}
+
+.contact-from {
+	display: flex;
+	justify-content: center;
+}
+
+.form {
+	width: 40%;
+	text-align: center;
+}
+
+.form input {
+	width: 100%;
+	padding: 20px;
+	border: none;
+	background: #fbfaf7;
+	border-radius: 20px;
+	margin: 10px 0px;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: capitalize;
+}
+
+.form textarea {
+	width: 100%;
+	background: #fbfaf7;
+	border: none;
+	padding: 20px;
+	border-radius: 20px;
+	height: 200px;
+}
+
+
+/* footer */
+.footer {
+	margin-top: 120px;
+}
+
+.footer-content {
+	background: #1e1d23;
+	text-align: center;
+	padding: 50px;
+}
+
+.footer-content h1 {
+	color: #fff;
+	font-size: 30px;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.footer-content h1 span {
+	color: #FBA24F;
+}
+
+.footer-content p {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.footer-content h5 {
+	color: #fff;
+	font-size: 14px;
+	text-transform: capitalize;
+	border-top: 1px solid #2d2d2d;
+	padding: 20px 0px;
+	margin-top: 50px;
+}
+
+.footer-content h5 span {
+	color: #FC8F49;
 }
